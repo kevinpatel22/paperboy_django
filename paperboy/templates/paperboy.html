@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Paperboy</h1>
+<h3>Name: {{ paperboy.name }}</h3>
+<h3>Papers Delivered: {{ paperboy.experience }}</h3>
+<h3>Earned: ${{ paperboy.earnings }}</h3>
+
+<a href="{% url 'home' %}">Back to Home</a>
+
+{% endblock %}
